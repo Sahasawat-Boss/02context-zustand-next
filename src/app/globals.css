@@ -1,7 +1,21 @@
 @import "tailwindcss";
 
+body {
+  background: black;
+  color: white;
+}
 
 
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------*/
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
