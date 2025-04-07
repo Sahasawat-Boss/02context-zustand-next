@@ -1,8 +1,9 @@
 import Link from "next/link"
+import DisplayData from "./components/DisplayData"
 
 const HomePage = () => {
   return (
-    <main>
+    <main className="p-4">
       <div>
         <h1 className='text-3xl'>Crafting Digital Experiences</h1>
         <p>From concept to code, we transform your vision into engaging, responsive, and powerful web solutions.</p>
@@ -17,6 +18,12 @@ const HomePage = () => {
         <img src="https://graphio.co.th/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-image.7999c522.webp&w=1920&q=75" alt="Hero-Image"
           className='scale-80' />
       </figure>
+
+      <div className="h-96 overflow-auto">
+        <h1 className='text-3xl'>Show Data</h1>
+
+        <DisplayData />
+      </div>
     </main>
   )
 }
