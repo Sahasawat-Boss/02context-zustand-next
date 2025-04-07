@@ -6,7 +6,9 @@ body {
 }
 
 
-
+.btn {
+  @apply hover:scale-110 transition duration-300 active:scale-70
+}
 
 
 

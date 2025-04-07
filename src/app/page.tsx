@@ -2,8 +2,9 @@ import Link from "next/link"
 import DisplayData from "./components/DisplayData"
 import InputCTX from "./components/InputCTX"
 import DisplayCTX from "./components/DisplayCTX"
-
+import InputZComp from "./components/InputZ"
 import { InputProvider } from "./context/inputStore"
+import DisplayZComp from "./components/DisplayZData"
 
 const HomePage = () => {
   return (
@@ -15,12 +16,14 @@ const HomePage = () => {
         </div>
 
         <section className='flex my-4 gap-4'>
-          <Link href={'/about'} className='bg-white text-black py-1 px-4 rounded-full'>Start Project</Link>
-          <Link href={'/about'} className='bg-black text-white py-1 px-4 border rounded-full'>Learn More</Link >
+          <Link href={'/about'} className='bg-white text-black py-1 px-4 rounded-full btn'>Start Project</Link>
+          <Link href={'/about'} className='bg-black text-white py-1 px-4 border rounded-full btn'>Learn More</Link >
         </section>
 
         <section>
+          <DisplayZComp />
           <DisplayCTX />
+
         </section>
 
         <figure>
@@ -32,11 +35,13 @@ const HomePage = () => {
           <h1 className='text-3xl'>Show Data</h1>
           <DisplayData />
         </div>
+
         <div>
-          <h1>Input with Context API</h1>
+          <h1>Input State Provider</h1>
 
           <InputCTX />
 
+          <InputZComp />
         </div>
       </InputProvider>
     </main >
