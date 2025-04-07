@@ -1,5 +1,6 @@
 import Link from "next/link"
 import DisplayData from "./components/DisplayData"
+import InputCTX from "./components/InputCTX"
 
 const HomePage = () => {
   return (
@@ -19,10 +20,13 @@ const HomePage = () => {
           className='scale-80' />
       </figure>
 
-      <div className="h-96 overflow-auto">
+      <div className="h-50 overflow-auto my-10">
         <h1 className='text-3xl'>Show Data</h1>
-
         <DisplayData />
+      </div>
+      <div>
+        <h1>Input with Context API</h1>
+        <InputCTX />
       </div>
     </main>
   )
